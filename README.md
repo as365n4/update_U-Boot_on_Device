@@ -1,5 +1,21 @@
 # arm64 update U-Boot on device (Rock64)
 
+#### Method A
+#### 1.)	Install Debian package for Rockchip U-Boot
+
+	sudo apt install u-boot-rockchip
+
+#### 2.)	Flashing U-Boot to our Pine64 Rock64 SBC
+
+	lsblk		(remember storage device name --> mmcblk0 for instance)
+
+	sudo u-boot-install-rockchip /dev/mmcblkX
+
+#### 3.)	Reboot the machine
+
+	sudo reboot
+ 
+#### Method B
 #### 1.)	Install Compiler for building U-Boot on our Pine64 Rock64 SBC
 
 	sudo apt install device-tree-compiler build-essential libssl-dev python3-dev bison
