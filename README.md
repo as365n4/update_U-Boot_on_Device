@@ -75,8 +75,8 @@
  	git clone https://github.com/ARM-software/arm-trusted-firmware
   	cd arm-trusted-firmware
    	git tag           (remember last stable --> lts-v2.12.1 for instance)
-    	git checkout lts-v2.12.1
-     	make PLAT=sun50i_h6 bl31
+	git checkout lts-v2.12.1
+	make PLAT=sun50i_h6 bl31
 
 	cd ..
   
